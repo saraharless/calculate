@@ -1,0 +1,56 @@
+/*green #8ACEAC
+blue #60B2C7
+purple #A798C8
+pink #F484A2
+orange #F8A87D*/
+
+
+body {
+  background-color: #B7C0C4;
+  display: flex;
+  justify-content: center;
+}
+
+.frame {
+  font-size: 24px;
+  background-color: white;
+  max-width: 500px;
+  border-radius: 20px;
+  padding: 2%;
+}
+
+button {
+  background: linear-gradient(145deg, #F8A87D, #F484A2);
+  color: white;
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  border: none;
+  margin: 18px 8px;
+}
+
+/*button::before {
+  background-image: linear-gradient(#60B2C7 0% #8ACEAC 100%);
+}*/
+
+.top {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+
+.functionbox {
+  display: inline-block;
+  /*flex-wrap: nowrap;*/
+  /*justify-content: center;*/
+}
+
+output {
+  max-width: 300px;
+  max-height: 80px;
+  flex-grow: 1;
+  display: block;
+  background: linear-gradient(#8ACEAC, #60B2C7);
+  margin-top: 20px;
+  margin-bottom: 0;
+}
