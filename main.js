@@ -24,90 +24,134 @@ let outputResult = document.getElementById("result")
 //row one
 let buttonSeven = document.getElementById("seven")
 buttonSeven.addEventListener("click", sevenHandler);
-function sevenHandler(){
-  outputResult.innerHTML+='7';
+
+function sevenHandler() {
+  if (outputResult.innerHTML.length < 10) {
+    outputResult.innerHTML += '7';
+  }
 }
 let buttonEight = document.getElementById("eight")
 buttonEight.addEventListener("click", eightHandler);
-function eightHandler(){
-  outputResult.innerHTML+='8';
+
+function eightHandler() {
+  if (outputResult.innerHTML.length < 10) {
+    outputResult.innerHTML += '8';
+  }
 }
 let buttonNine = document.getElementById("nine")
 buttonNine.addEventListener("click", nineHandler);
-function nineHandler(){
-  outputResult.innerHTML+='9';
+
+function nineHandler() {
+  if (outputResult.innerHTML.length < 10) {
+    outputResult.innerHTML += '9';
+  }
 }
 let buttonDivide = document.getElementById("divide")
 buttonDivide.addEventListener("click", divideHandler);
-function divideHandler(){
-  outputResult.innerHTML+='/';
+
+function divideHandler() {
+  if (outputResult.innerHTML.length < 10) {
+    outputResult.innerHTML += '/';
+  }
 }
 //row two
 let buttonFour = document.getElementById("four")
 buttonFour.addEventListener("click", fourHandler);
-function fourHandler(){
-  outputResult.innerHTML+='4';
+
+function fourHandler() {
+  outputResult.innerHTML += '4';
+  if (outputResult.innerHTML.length < 10) {}
 }
 let buttonFive = document.getElementById("five")
 buttonFive.addEventListener("click", fiveHandler);
-function fiveHandler(){
-  outputResult.innerHTML+='5';
+
+function fiveHandler() {
+  if (outputResult.innerHTML.length < 10) {
+    outputResult.innerHTML += '5';
+  }
 }
 let buttonSix = document.getElementById("six")
 buttonSix.addEventListener("click", sixHandler);
-function sixHandler(){
-  outputResult.innerHTML+='6';
+
+function sixHandler() {
+  if (outputResult.innerHTML.length < 10) {
+    outputResult.innerHTML += '6';
+  }
 }
 let buttonMultiply = document.getElementById("multiply")
 buttonMultiply.addEventListener("click", multiplyHandler);
-function multiplyHandler(){
-  outputResult.innerHTML+='*';
+
+function multiplyHandler() {
+  if (outputResult.innerHTML.length < 10) {
+    outputResult.innerHTML += '*';
+  }
 }
 //row three
 let buttonOne = document.getElementById("one")
 buttonOne.addEventListener("click", oneHandler);
-function oneHandler(){
-  outputResult.innerHTML+='1';
+
+function oneHandler() {
+  if (outputResult.innerHTML.length < 10) {
+    outputResult.innerHTML += '1';
+  }
 }
 let buttonTwo = document.getElementById("two")
 buttonTwo.addEventListener("click", twoHandler);
-function twoHandler(){
-  outputResult.innerHTML+='2';
+
+function twoHandler() {
+  if (outputResult.innerHTML.length < 10) {
+    outputResult.innerHTML += '2';
+  }
 }
 let buttonThree = document.getElementById("three")
 buttonThree.addEventListener("click", threeHandler);
-function threeHandler(){
-  outputResult.innerHTML+='3';
+
+function threeHandler() {
+  if (outputResult.innerHTML.length < 10) {
+    outputResult.innerHTML += '3';
+  }
 }
 let buttonSubtract = document.getElementById("subtract")
 buttonSubtract.addEventListener("click", subtractHandler);
-function subtractHandler(){
-  outputResult.innerHTML+='-';
+
+function subtractHandler() {
+  if (outputResult.innerHTML.length < 10) {
+    outputResult.innerHTML += '-';
+  }
 }
 //row four
 let buttonZero = document.getElementById("zero")
 buttonZero.addEventListener("click", zeroHandler);
-function zeroHandler(){
-  outputResult.innerHTML+='0';
+
+function zeroHandler() {
+  if (outputResult.innerHTML.length < 10) {
+    outputResult.innerHTML += '0';
+  }
 }
 let buttonDecimal = document.getElementById("decimal")
 buttonDecimal.addEventListener("click", decimalHandler);
-function decimalHandler(){
-  outputResult.innerHTML+='.';
+
+function decimalHandler() {
+  if (outputResult.innerHTML.length < 10) {
+    outputResult.innerHTML += '.';
+  }
 }
 let buttonAdd = document.getElementById("add")
-buttonTwo.addEventListener("click", addHandler);
-function addHandler(){
-  outputResult.innerHTML+='+';
-}
+buttonAdd.addEventListener("click", addHandler);
 
+function addHandler() {
+  if (outputResult.innerHTML.length < 10) {
+    outputResult.innerHTML += '+';
+  }
+}
 
 //equals
 let buttonEquals = document.getElementById("equals")
 buttonEquals.addEventListener("click", equalsHandler);
-function equalsHandler(){
+
+function equalsHandler() {
   // outputResult.innerHTML;
-let equation = outputResult.innerHTML;
+  let equation = outputResult.innerHTML;
   console.log(equation);
   let result = eval(equation);
   console.log(result);
@@ -118,6 +162,7 @@ let equation = outputResult.innerHTML;
 //clear
 let buttonClear = document.getElementById("clear")
 buttonClear.addEventListener("click", clearHandler);
-function clearHandler(){
-  outputResult.innerHTML='';
+
+function clearHandler() {
+  outputResult.innerHTML = '';
 }

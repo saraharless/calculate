@@ -17,18 +17,19 @@ body {
   max-width: 500px;
   border-radius: 20px;
   padding: 2%;
-  margin: 40px 20px;
+  margin: 20px 20px;
 }
 
 button {
   background: linear-gradient(145deg, #F8A87D, #F484A2);
   color: white;
   border-radius: 50px;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   border: none;
   margin: 18px 8px;
   box-shadow: 3px 3px 3px #B7C0C4;
+  font-size: 90px;
 }
 
 button:active {
@@ -50,10 +51,11 @@ button:focus {
 }
 
 output {
+  font-size: 40px;
   padding: 5px 8px;
   color: white;
   border-radius: 8px;
-  max-width: 300px;
+  max-width: 263px;
   max-height: 80px;
   flex-grow: 1;
   display: block;
@@ -62,3 +64,12 @@ output {
   margin-bottom: 0;
   box-shadow: 1px 2px 2px #B7C0C4;
 }
+
+.buttonclear {
+  margin-right: 50px;
+  margin-left: 0;
+}
+
+/*.operator {
+  font-size: 100px;
+}*/
