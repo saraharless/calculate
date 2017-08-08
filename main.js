@@ -59,8 +59,9 @@ let buttonFour = document.getElementById("four")
 buttonFour.addEventListener("click", fourHandler);
 
 function fourHandler() {
+  if (outputResult.innerHTML.length < 12) {
   outputResult.innerHTML += '4';
-  if (outputResult.innerHTML.length < 12) {}
+  }
 }
 let buttonFive = document.getElementById("five")
 buttonFive.addEventListener("click", fiveHandler);
@@ -155,7 +156,7 @@ function equalsHandler() {
   console.log(equation);
   let result = eval(equation);
   console.log(result);
-  outputResult.innerHTML = result;
+  outputResult.innerHTML = result.toFixed(2);
 }
 
 
