@@ -156,6 +156,9 @@ function equalsHandler() {
   console.log(equation);
   let result = eval(equation);
   console.log(result);
+  if (result%1 === 0){
+    outputResult.innerHTML = result
+  } else
   outputResult.innerHTML = result.toFixed(5);
 }
 

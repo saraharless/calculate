@@ -2,7 +2,6 @@ body {
   display: flex;
   justify-content: center;
   background-color: #97D9E1;
-
 }
 
 .frame {
@@ -11,7 +10,7 @@ body {
   max-width: 500px;
   border-radius: 20px;
   padding: 2%;
-  margin: 60px 20px 20px 20px;
+  margin: 40px 20px 20px 20px;
 }
 
 button {
@@ -72,7 +71,7 @@ output {
   background-color: #6E66F2;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 700px) {
   button {
     width: 90px;
     height: 90px;
@@ -82,5 +81,8 @@ output {
     height: 60px;
     margin-top: 20px;
     font-size: 40px;
+  }
+  .frame{
+    margin: 60px 20px 20px 20px;
   }
 }
