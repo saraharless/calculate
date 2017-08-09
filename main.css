@@ -1,7 +1,8 @@
 body {
-  background-color: #B7C0C4;
   display: flex;
   justify-content: center;
+  background-color: #97D9E1;
+
 }
 
 .frame {
@@ -16,8 +17,8 @@ body {
 button {
   color: white;
   border-radius: 10px;
-  width: 90px;
-  height: 90px;
+  width: 50px;
+  height: 50px;
   border: none;
   margin: 5px 5px;
   box-shadow: 3px 3px 3px #cccccc;
@@ -48,16 +49,15 @@ button:hover {
 }
 
 output {
-  font-size: 40px;
+  font-size: 20px;
   padding: 5px 8px;
   color: white;
   border-radius: 8px;
-  width: 300px;
-  max-height: 80px;
-  flex-grow: 1;
+  width: 180px;
+  height: 26px;
   display: block;
   background-color: #F484A2;
-  margin-top: 20px;
+  margin-top: 12px;
   margin-bottom: 20px;
   box-shadow: 1px 2px 2px #B7C0C4;
 }
@@ -70,4 +70,17 @@ output {
 
 .operator {
   background-color: #6E66F2;
+}
+
+@media screen and (min-width: 550px) {
+  button {
+    width: 90px;
+    height: 90px;
+}
+  output {
+    width: 300px;
+    height: 60px;
+    margin-top: 20px;
+    font-size: 40px;
+  }
 }
